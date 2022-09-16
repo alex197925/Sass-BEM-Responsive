@@ -52,3 +52,59 @@ a, a:visited, a:active {
 ```typescript
 @forward "globals";
 ```
+
+## Variables
+* Variables are a way to store information that you can re-use later.
+
+With Sass, you can store information in variables, like:
+
+strings
+numbers,
+colors,
+booleans,
+lists,
+nulls.
+1. Create _color.scss file and update _index.scss
+2. Make variables.. 
+
+````typescript
+:root {
+  --background-color: hsl(0, 0%, 11%);
+  --text-color: hsl(0, 0%, 100%);
+}
+````
+3. Use variables
+```typescript
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+```
+# Using Google Font
+1. Create new folder call util, inside create _fonts.scss and _index.scss
+* Add font links to index.html file.
+2. In _fonts.scss create variable and put font name.
+````typescript
+$font: 'Open Sans', sans-serif;
+````
+3. Forward variable to util->_index.scss file
+```typescript
+@forward "fonts";
+```
+4. To use font in _boilerplate.scss, importing 
+```typescript
+@use '../util' as u;
+```
+and using in body tag.
+```typescript
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+```
