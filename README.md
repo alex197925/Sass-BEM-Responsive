@@ -109,4 +109,43 @@ body {
 }
 ```
 
-### Responsive Design
+### SASS AND BEM
+
+1. BEM -  Block-Element-Modifier
+* [Link text Here](https://sparkbox.com/foundry/bem_by_example)
+
+````typescript
+<div class="grid">
+    <main class="grid__main">
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda aut distinctio, dolorum
+            exercitationem
+            facilis laborum minima molestias perspiciatis, provident repudiandae, vero. Nesciunt nihil sequi totam
+            veniam!
+            Adipisci aliquid architecto at deleniti, repellat vel vero. Dolore enim exercitationem fuga in, labore
+            nostrum
+            perferendis quae quod temporibus velit. Accusantium aspernatur aut commodi, culpa debitis delectus dolor
+            eius
+            enim eos esse, expedita facere facilis fugit hic illo incidunt ipsam maxime nam neque, nihil praesentium
+            quia
+            reprehenderit similique sint tempore totam veritatis voluptates!</p>
+    </main>
+    <aside class="grid__sidebar">
+        <h2>More info</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ducimus ea eligendi fuga inventore laboriosam
+            maxime, possimus! Consequatur dignissimos dolore est expedita explicabo hic id ipsam, itaque officiis optio
+            quidem rem saepe sequi, sit sunt! Consequatur impedit possimus quam recusandae unde. Accusantium deleniti
+            dignissimos dolorem, dolores earum ipsa itaque iure necessitatibus odio perferendis placeat quam, quasi
+            reprehenderit saepe velit vitae?</p>
+    </aside>
+</div>
+````
+
+## Responsive Design
+- Use media queries
+Set rule for screen min-width: 900px;
+```typescript
+@media (min-width: 900px) {
+  grid-template-columns: 2fr 1fr;
+}
+```
