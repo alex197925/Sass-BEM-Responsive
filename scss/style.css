@@ -34,6 +34,27 @@ a, a:visited, a:active {
   --text-color: hsl(0, 0%, 100%);
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 40px;
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.grid__main, .grid__sidebar {
+  padding: 40px;
+}
+.grid__main {
+  background-color: darkblue;
+}
+.grid__sidebar {
+  background-color: magenta;
+}
+
 /** @format */
 
 /*# sourceMappingURL=style.css.map */
