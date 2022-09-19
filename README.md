@@ -108,3 +108,5 @@ body {
   color: var(--text-color);
 }
 ```
+
+### Responsive Design
