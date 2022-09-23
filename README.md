@@ -149,3 +149,13 @@ Set rule for screen min-width: 900px;
   grid-template-columns: 2fr 1fr;
 }
 ```
+
+## SASS MIXINS 
+- The @mixin directive lets you create CSS code that is to be reused throughout the website.
+````typescript
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+````
