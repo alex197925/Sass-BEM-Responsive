@@ -1,3 +1,6 @@
+@use '../util' as u;
+
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -9,7 +12,7 @@
 
 
 //  Breakpoint from 900px and up
-@media (min-width: 900px) {
+@include u.breakpoint (large) {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
 }
